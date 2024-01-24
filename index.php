@@ -15,7 +15,7 @@
 <body>
     <form>
         <div class="form-floating m-2">
-            <input type="number" class="form-control" id="passwordLength" name="passwordLength" min="1">
+            <input type="number" class="form-control" id="passwordLength" name="passwordLength" min="1" required>
             <label for="lenght">Inserisci la lunghezza della Password</label>
         </div>
         <div class="text-center">
@@ -24,7 +24,8 @@
     </form>
 
     <h2 class="m-2">La tua Password:</h2>
-    <span class="d-block m-2 fs-4"> <?php echo $lenght; ?> </span>
+    <span class="d-block m-2 fs-4"> <?php echo generatePassword($passwordLength)?> </span>
+
 
 </body>
 
